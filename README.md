@@ -1,5 +1,5 @@
 # Ex.06 Book Front Cover Page Design
-## Date:
+##
 
 ## AIM:
 To design a book front cover page using HTML and CSS.
@@ -32,8 +32,97 @@ Publish the website in the LocalHost.
 
 ## PROGRAM:
 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Cover</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
+    .book-cover {
+      width: 400px;
+      height: 600px;
+      background-image: url('cover.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      border-radius: 12px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      text-align: center;
+    }
+
+    .book-title {
+      font-size: 34px;
+      font-weight: bold;
+      margin-top: 50px;
+      padding: 10px;
+      background: rgba(255,255,255,0.7);
+      color: #000;
+      border-radius: 8px;
+    }
+
+    .book-subtitle {
+      font-size: 20px;
+      font-style: italic;
+      padding: 8px;
+      background: rgba(255,255,255,0.6);
+      color: #000;
+      border-radius: 6px;
+      margin: 0 auto 20px auto;
+    }
+
+    .author {
+      font-size: 18px; margin-top: auto; 
+      font-style: italic; 
+      background-color: rgb(160, 153, 153); 
+      color: rgb(160, 153, 153); 
+      color: black; 
+      text-align: left;
+    }
+
+    .author-image {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #000;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="book-cover">
+    <div class="book-title">TWISTED LOVE</div>
+    <div class="book-subtitle">HE HAS A HEART OF ICE BUT FOR HER. HE'D BURN THE WORLD</div>
+    <div class="author">by: Mohanraj</div>
+    <img src="mohan.jpg" alt="POOJA PRIYA B" class="author-image">
+  </div>
+</body>
+</html>
+
+```
 ## OUTPUT:
+![web 6](https://github.com/user-attachments/assets/d5f0b465-bce2-4d54-9063-3292d5e5dccd)
+
 
 
 ## RESULT:
